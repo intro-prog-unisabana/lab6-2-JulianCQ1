@@ -16,6 +16,6 @@ def assignment_averages(estudiantes):
             cuenta[materia] = cuenta.get(materia, 0) + 1
     resultado = {}
     for asignatura in total:
-        resultado[asignatura] = total[asignatura] / cuenta[asignatura]
+        resultado[asignatura] = round(total[asignatura] / cuenta[asignatura])
     return resultado
    
