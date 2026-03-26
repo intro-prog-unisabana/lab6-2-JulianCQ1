@@ -18,3 +18,7 @@ def promedio_asignatura(estudiantes):
     for asignatura in total:
         resultado[asignatura] = total[asignatura] / cuenta[asignatura]
         return resultado
+    def student_averages(students):
+        return promedio_estudiante(students)
+    def assignment_averages(students):
+        return promedio_asignatura(students)
