@@ -1,10 +1,10 @@
-def promedio_estudiante(estudiantes):
+def student_averages(estudiantes):
     promedios = {}
     for estudiante, notas in estudiantes.items():
         average = sum(notas.values()) / len(notas)
         promedios[estudiante] = average
     return promedios
-def promedio_asignatura(estudiantes):
+def assignment_averages(estudiantes):
     total = {}
     cuenta = {}
     for asignatura in estudiantes.values():
@@ -18,7 +18,4 @@ def promedio_asignatura(estudiantes):
     for asignatura in total:
         resultado[asignatura] = total[asignatura] / cuenta[asignatura]
         return resultado
-    def student_averages(students):
-        return promedio_estudiante(students)
-    def assignment_averages(students):
-        return promedio_asignatura(students)
+   
