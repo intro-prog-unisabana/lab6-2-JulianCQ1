@@ -1,9 +1,4 @@
-def temp_and_color():
-    data = {
-        "temp" : 25,
-        "color" : "red",
-        "status" : "ok"
-    }
-    print ( data.get("temp") )
-    print ( data.get("color") )
-    
+def temp_and_color(data):
+    temp = data.get("temperature")
+    color = data.get("color")
+    return (temp, color)
