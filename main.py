@@ -7,7 +7,8 @@ def main():
     while True:
         print("\nSelect an option:")
         print("1. Add a student")
-        
+        print("2. Print student grade averages")
+        print("3. Exit")
       
         option = input()
 
